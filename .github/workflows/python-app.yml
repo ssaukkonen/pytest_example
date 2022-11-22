@@ -27,3 +27,10 @@ jobs:
     - name: Run tests and coverage report
       run: |
         coverage run -m pytest -v -s
+        coverage report
+        coverage html
+    - name: Archive code coverage html report
+      uses: actions/upload-artifact@v2
+      with:
+        name: code-coverage-report
+        path: htmlcov
