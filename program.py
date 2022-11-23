@@ -1,4 +1,7 @@
-def main(int1, int2):
+def main():
+    result = add(1, 1)
+
+def add(int1, int2):
     try:
         return int1 + int2
     except Exception as e:
