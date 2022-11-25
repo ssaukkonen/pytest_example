@@ -8,5 +8,5 @@ def add(int1, int2):
         print(e)
         return 0
 
-if __name__=="main":
+if __name__=="__main__":
     main()  # pragma: no cover
